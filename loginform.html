@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>project</title>
+        <style>
+         body{
+            background-size: cover;
+            background-repeat: no repeat;
+            background-image: url("loginform.webp");
+            }
+           div{
+            text-align:center;
+           }    .abc{
+         
+    width:35rem;
+    margin: auto;
+    color:rgb(7, 3, 3);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(95, 138, 179, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(5, 4, 4, 0.125);
+    height: 500;
+    margin-left:55%;
+      
+ }
+
+       </style>
+       
+
+       <script>
+        // User Validations
+function loginValidation() {
+            // Ramya
+  var uname = document.myform.username.value;
+             //Ramya@28
+  var password = document.myform.password.value;
+            if(uname==null || uname=="") {
+              alert("Name cant be blank")
+              return false;  
+           } else if (password.length<6){
+              alert("Password Must be 6 letters")                                                                                                                                                                                                                                                                                                                                                          
+              return false;
+           }  
+           return true                 
+        }           
+     </script>
+     </head>
+     <body>
+
+    <body>
+        <br>
+        <br>
+        
+        <div class="abc">
+            <br>
+        
+            <br>
+        <h1>login form</h1>
+        <hr>
+        <form name="myform" action= "service.html" onsubmit="return loginValidation(this)">
+        <br>
+        
+    <h1>Username:<input type="text" name="username" placeholder="username"></h1>
+        <br> 
+    <h1>Password:<input type="text" name="password" placeholder="password"></h1>
+        <br>
+        <h2><input type="submit"   value="Submit"></h2>  
+        <h3><p class="mb-0 pt-3"><strong>Dont have an account?</strong><a href="registration.html" class="text-dark-50 fw-bold"><strong>sign up</strong></a>
+            <p><strong>forget your password</strong><a href="email.html"><string> click here</string></a></p><h3></h3>
+        
+
+    </div>
+</form>
+    </body>
+
+</html>
+
